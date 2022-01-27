@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@500&display=swap');
+
+/*Common style utilites */
+body{
+    font-family: 'Poppins', sans-serif;  
+
+}
+main{
+    
+}
+/* header part style */
+header{
+    width: 100%;
+    height: 677px;
+    background: #2D25A0;
+    position: relative;
+}
+.nav{
+    position: absolute;
+    display: flex;
+    justify-content:space-between;
+    height: 44px;
+    width: 1160px;
+    margin-left: 156px;
+    margin-top: 42px;
+}
+.menu{
+    font-size: 16px;
+    line-height: 24px;
+}
+.nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0px  36px 0px 0px;
+}
+.login{
+    padding: 10px 24px;
+    background: #E02C6D;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 8px;
+}
+.fa-sign-in-alt{
+    color:#FFFFFF;
+    margin-right: 5px;
+}
+.banner:hover .header-image{
+    transform:scale(1.2);
+    transition: transform 2s ease-in-out ;
+}
+.header-text{
+    margin-top: 207px;
+    display: inline-block;
+    margin-left: 156px;
+}
+.header-text p{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.button{
+    width: 110px;
+}
+.button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+.header-image{
+    display: flex;
+    float: right;
+    
+    margin-top: 130px;
+    margin-right: 230px;
+}
+.header-image img{
+    width: 556.01px;
+    height: 438px;
+}
+/* Photo Album style */
+.photo-album{
+    display:grid;
+    grid-template-columns: repeat(3,0fr);
+    justify-content: center;
+    grid-column-gap: 30px;
+    margin-top: 70px;
+}
+.photo-frame{
+    width: 300px;
+    height: 474px;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin: 15px;
+}
+.photo img{
+    width: 300px;
+    height: 256px;
+}
+.photo-text{
+    width: 300px;
+}
+.photo-text h2{
+    font-weight: 900;
+    font-size: 28px;
+    color: #18191F;
+    margin:10px 0px;
+}
+.photo-text p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+    align-self: stretch;
+}
+/* Highlights part */
+.highlights{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1102px;
+    height: 427px;
+    margin: 0 auto;
+    margin-top: 165px;
+}
+.highlight-text{
+    width: 469px;
+    height: 309px;
+}
+.highlight-text h2{
+    color: #0A0826;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: bold;
+}
+.highlight-text p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 28px;
+    text-align:left;
+    margin: 10px 0px;
+}
+.watch-now{
+    margin-left: 0px;
+    margin-top: 20px;
+}
+..highlight-image{
+    width: 567px;
+    height: 427px;
+}
+.highlight-image img{
+    width: 567px;
+    height: 427px;
+}
+
+/* footer */
+footer{
+    width: 484px;
+    height: 213px;
+    margin: 0 auto;
+    margin-bottom: 63px;
+}
+.logo{
+    margin-top: 158px;
+    margin-bottom: 20px;
+}
+.logo img{
+    height: 110px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 32px;
+    right: 156.94px;
+    top: calc(50% - 32px/2 + 39.5px);
+    margin: 0 auto;
+}
+.fab.icon{
+    color: #969BAB;
+    width: 32px;
+    height: 39.5px;
+    font-size: 22px;
+}
+.Copyright{
+    margin-top: 20px;
+}
+.Copyright p{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+/* Responsive */
+@media (max-width:768px) {
+    header{
+        height: 695px;
+    }
+    .nav{
+        display: none;
+    }
+    .header-text{
+        width: 278px;
+        height: 138px;
+        margin: 112px 66px 0px  16px;
+    }
+    .header-text p{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .header-image{
+        position: absolute;
+        width: 329px;
+        height: 259.17px;
+        margin: 50px 16px 62px 15px;
+    }
+    .header-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .banner:hover .header-image{
+        transform:scaleX(1.1);
+        transition: transform 2s ease-in-out ;
+    }
+    .photo-album{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 47px ;
+    }
+    .photo-frame{
+        margin:12px;
+    }
+    .highlights{
+        display: none;
+    }
+    .logo{
+        text-align: center;
+        margin-top: 43px;
+    }
+    .logo img{
+        width: 271px;
+        height: 63px;
+    }
+}
